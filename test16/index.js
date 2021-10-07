@@ -13,3 +13,9 @@ window.onresize = function() {
 };
 
 emitter.rate = new Proton.Rate(Proton.getSpan(20, 40));
+
+emitter.addInitialize(new Proton.Radius(0.5, 3));
+emitter.addInitialize(new Proton.Life(5));
+emitter.addInitialize(
+    new Proton.Velocity(new Proton.Span(1, 2), new Proton.Span(0, 360), 'polar')
+);
