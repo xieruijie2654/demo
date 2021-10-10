@@ -48,6 +48,12 @@
     color: #f22e00;
 }
 
-#headMessage li a span.store {
+#headMessage li span.store {
     color: #9c9c9c;
+}
+
+#headMessage li.line {
+    font-size: 12px;
+    color: #ddd;
+    padding: 0 5px;
 }
