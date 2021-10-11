@@ -33,6 +33,16 @@ input {
     padding: 0;
 }
 
+table {
+    border-collapse: collapse;
+    /* 边框模式,合并的模式 */
+}
+
+th,
+td {
+    padding: 0;
+}
+
 bottom {
     outline: none;
 }
@@ -68,6 +78,14 @@ body {
 
 .c5 {
     color: #f50;
+}
+
+.c6 {
+    color: #8d7afb;
+}
+
+.c7 {
+    color: #a8c001;
 }
 
 .mr7 {
