@@ -1,7 +1,8 @@
 @import "reset.css";
 @font-face {
     font-family: "iconfont";
-    src: url("../font/iconfont.ttf") format("truetype");
+    src: url("../font/iconfont.eot");
+    src: url("../font/iconfont.eot?#iefix") format("embedded-opentype"), url("../font/iconfont.woff2") format("woff2"), url("../font/iconfont.woff") format("woff"), url("../font/iconfont.ttf") format("truetype"), url("../font/iconfont.svg#iconfont") format("svg");
 }
 
 .iconfont {
@@ -405,9 +406,26 @@
     cursor: pointer;
     border: none;
     background-color: rgba(0, 0, 0, 0.3);
+    background-color: #000 \9;
+    filter: alpha(opacity=30);
     position: absolute;
     top: 50%;
     margin-top: -15px;
+    display: none;
+}
+
+.firstLeft .pic button.leftBtn {
+    left: 0;
+    border-radius: 0 15px 15px 0;
+}
+
+.firstLeft .pic button.rightBtn {
+    right: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.firstLeft .pic:hover button {
+    display: block;
 }
 
 
