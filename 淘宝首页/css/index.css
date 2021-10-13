@@ -351,7 +351,6 @@
     border: 1px solid #ff5000;
     box-sizing: border-box;
     border-top: none;
-    transition: background-color 0.3s;
     padding-top: 5px;
 }
 
@@ -360,10 +359,13 @@
     line-height: 32px;
     padding-left: 25px;
     color: #999;
+    font-size: 14px;
+    transition: background-color 0.3s;
 }
 
 .firstLeft .sideNav li a {
     font-size: 14px;
+    color: #666;
 }
 
 .firstLeft .sideNav li span {
@@ -406,6 +408,7 @@
     cursor: pointer;
     border: none;
     background-color: rgba(0, 0, 0, 0.3);
+    /* 支持情况: IE9+ */
     background-color: #000 \9;
     filter: alpha(opacity=30);
     position: absolute;
@@ -428,23 +431,120 @@
     display: block;
 }
 
+.firstLeft .pic .circle {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    margin-left: -35px;
+    border-radius: 10px;
+    padding: 3px 0;
+    font-size: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.firstLeft .pic .circle span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 3px;
+    cursor: pointer;
+}
+
+.firstLeft .pic .circle span.active {
+    background-color: #ff5000;
+}
+
+.firstLeft .ad {
+    width: 160px;
+}
+
+.firstLeft .ad img {
+    width: 160px;
+}
+
 
 /* 图片2容器 */
 
-.img2Box {
+.firstLeft .img2Box {
     width: 690px;
-    height: 230px;
-    background: #ccc;
+    height: 220px;
     margin-top: 10px;
+}
+
+.firstLeft .img2Box .picTitle {
+    height: 20px;
+}
+
+.firstLeft .img2Box .picTitle .text {
+    height: 17px;
+    line-height: 17px;
+}
+
+.firstLeft .img2Box .picTitle .text .bg {
+    background: url(../images/title_bg.png) no-repeat left;
+    padding-left: 136px;
+    color: #666;
+}
+
+.firstLeft .img2Box .picTitle .text i {
+    color: #ff1648;
+}
+
+.firstLeft .img2Box .picTitle .line {
+    height: 3px;
+    background-color: #ff1648;
+    position: relative;
+}
+
+.firstLeft .img2Box .picTitle .line span {
+    position: absolute;
+    left: 0;
+    width: 87px;
+    height: 3px;
+    background-color: #000;
+}
+
+.firstLeft .img2Box .img {
+    width: 520px;
+    height: 200px;
+    background-color: #fff;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 0;
+}
+
+.firstLeft .img2Box .img img {
+    margin: 0 10px;
+}
+
+.firstLeft .img2Box .ad .title {
+    height: 20px;
+    line-height: 20px;
 }
 
 
 /* 淘宝头条 */
 
-.news {
+.firstLeft .news {
     width: 890px;
     height: 100px;
-    background: #999;
+    background: #fff;
+    margin-top: 10px;
+    box-sizing: border-box;
+    padding: 13px 13px 13px 20px;
+}
+
+.firstLeft .news .hd {}
+
+.firstLeft .news .hd h3 {
+    width: 128px;
+    height: 26px;
+    background: url(../images/news_logo.png) no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
 }
 
 
