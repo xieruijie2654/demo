@@ -549,11 +549,345 @@
     overflow: hidden;
 }
 
+.firstLeft .news .hd p {
+    color: #999;
+    line-height: 24px;
+}
+
+.firstLeft .news .newList {
+    width: 680px;
+    position: relative;
+}
+
+.firstLeft .news .newList .img {
+    margin-right: 15px;
+}
+
+.firstLeft .news .newList .img img {
+    width: 130px;
+    height: 73px;
+}
+
+.firstLeft .news .newList h4 {
+    line-height: 28px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.firstLeft .news .newList h4 a {
+    color: #333;
+}
+
+.firstLeft .news .newList h4 a:hover,
+.firstLeft .news .newList .more:hover {
+    color: #ff5000;
+}
+
+.firstLeft .news .newList p {
+    line-height: 18px;
+    font-size: 14px;
+}
+
+.firstLeft .news .newList p a {
+    color: #999;
+}
+
+.firstLeft .news .newList .more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #999;
+}
+
 
 /* 右边内容 */
 
 .firstRight {
     width: 290px;
-    height: 621px;
-    background: #9c9c9c;
+    margin-top: 10px;
+}
+
+
+/* 用户 */
+
+.firstRight .user {
+    height: 140px;
+    margin-top: 5px;
+    background: url(../images/user_bg.png);
+}
+
+.firstRight .user .avatar {
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.firstRight .user .avatar img {
+    width: 50px;
+    height: 50px;
+}
+
+.firstRight .user .username {
+    text-align: center;
+    line-height: 16px;
+}
+
+.firstRight .user .members {
+    text-align: center;
+    font-size: 0;
+}
+
+.firstRight .user .members a {
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 9px;
+    padding: 0 10px 0 20px;
+    margin: 0 2px;
+    /* background: #ffe4dc; */
+}
+
+.firstRight .user .members a.gold {
+    background: #ffe4dc url(../images/ico.png) 0 -572px no-repeat;
+}
+
+.firstRight .user .members a.culb {
+    background: #ffe4dc url(../images/ico.png) 0 -528px no-repeat;
+}
+
+.firstRight .user .btn {
+    text-align: center;
+}
+
+.firstRight .user .btn button {
+    width: 75px;
+    height: 25px;
+    line-height: 25px;
+    margin: 12px 2px 0 2px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    background-image: linear-gradient(to right, #ff9000, #ff5000);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#ffff9000', endColorstr='#ffff5000', GradientType=1);
+}
+
+.firstRight .user .btn button.login {
+    width: 92px;
+}
+
+
+/* 举报 */
+
+.firstRight .tipOff {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    color: #f40;
+    background: #ffe4dc;
+    text-align: center;
+}
+
+.firstRight .tipOff i {
+    font-size: 12px;
+    vertical-align: 1px;
+    position: relative;
+    left: 30px;
+}
+
+
+/* 公告区 */
+
+.firstRight .notice {
+    height: 108px;
+    background-color: #fff;
+}
+
+.firstRight .notice .title {
+    text-align: center;
+    font-size: 0;
+    padding-top: 10px;
+}
+
+.firstRight .notice .title li {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 4px;
+    margin: 0 10px;
+}
+
+.firstRight .notice .title li.active {
+    font-weight: bold;
+    border-bottom: 2px solid #f40;
+}
+
+.firstRight .notice .title li a:hover {
+    color: #f40;
+}
+
+.firstRight .notice .content {
+    margin: 0 12px;
+    padding-top: 10px;
+}
+
+.firstRight .notice .content li {
+    height: 25px;
+    line-height: 25px;
+    overflow: hidden;
+    float: left;
+    width: 130px;
+}
+
+.firstRight .notice .content li a:hover,
+.firstRight .notice .content li.item1 a {
+    color: #ff5000;
+}
+
+.firstRight .notice .content li.item1 {
+    width: 100%;
+    color: #ff5000;
+}
+
+
+/* 图标区域 */
+
+.firstRight .icon {
+    width: 100%;
+    height: 232px;
+    background-color: #fff;
+    table-layout: fixed;
+    /* 定义列宽的算法,fixed的计算方式为根据表格宽度自动计算列宽,每列的宽度为均分整个表格的宽度 */
+}
+
+.firstRight .icon td {
+    border: 1px solid #f4f4f4;
+    text-align: center;
+}
+
+.firstRight .icon td span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background: url(../images/ico.png) no-repeat;
+}
+
+.firstRight .icon td i {
+    line-height: 34px;
+    color: #333;
+}
+
+.firstRight .icon .item1 span {
+    background-position: 0 0;
+}
+
+.firstRight .icon .item2 span {
+    background-position: 0 -87px;
+}
+
+.firstRight .icon .item3 span {
+    background-position: 0 -44px;
+}
+
+.firstRight .icon .item4 span {
+    background-position: 0 -132px;
+}
+
+.firstRight .icon .item5 span {
+    background-position: 0 -176px;
+}
+
+.firstRight .icon .item6 span {
+    background-position: 0 -220px;
+}
+
+.firstRight .icon .item7 span {
+    background-position: 0 -264px;
+}
+
+.firstRight .icon .item8 span {
+    background-position: 0 -308px;
+}
+
+.firstRight .icon .item9 span {
+    background-position: 0 -352px;
+}
+
+.firstRight .icon .item10 span {
+    background-position: 0 -396px;
+}
+
+.firstRight .icon .item11 span {
+    background-position: 0 -440px;
+}
+
+.firstRight .icon .item12 span {
+    background-position: 0 -484px;
+}
+
+
+/* APP */
+
+.firstRight .app {
+    height: 111px;
+    background: #fff;
+}
+
+.firstRight .app .title {
+    height: 30px;
+    line-height: 30px;
+}
+
+.firstRight .app h3 {
+    font-size: 14px;
+    padding-left: 14px;
+}
+
+.firstRight .app a {
+    margin-right: 10px;
+}
+
+.firstRight .app a:hover {
+    color: #f40;
+}
+
+.firstRight .app .appIcon {
+    text-align: center;
+    font-size: 0;
+}
+
+.firstRight .app .appIcon li {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin: 0 10px 8px 10px;
+}
+
+.firstRight .app .appIcon li img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* 有好货 */
+
+.goods {
+    width: 590px;
+    height: 658px;
+    background: #fff;
+}
+
+.goods .head {
+    height: 24px;
+    margin: 20px 0;
+    padding: 0 20px;
+    line-height: 24px;
+}
+
+.goods .head h3 {
+    font-size: 0;
+    font-weight: normal;
 }
